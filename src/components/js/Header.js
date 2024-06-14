@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="fixed w-full bg-white flex justify-center p-3 z-20">
+      <div className="fixed w-full bg-white flex justify-center p-3 z-20 -mt-1">
         <div className="flex justify-between lg:gap-[7rem] w-full max-w-screen-lg">
           <div className="text-[15px] flex gap-1 items-center sm:w-[2.5rem] w-[2rem]">
             <img src={img3} className="rounded-lg" alt="Logo"/>

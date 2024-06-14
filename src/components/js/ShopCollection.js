@@ -81,7 +81,7 @@ function ShopCollections() {
   return (
     <div className="bg-slate-50">
       <div className="flex justify-center">
-        <div className="sm:mt-[5rem] mt-[4rem] text-center">
+        <div className="sm:mt-[5rem] mt-[5rem] text-center">
           <div className="md:text-[35px] sm:text-[25px] text-[18px] font-medium">Shop Collection</div>
           <p className="text-slate-500 font-medium sm:text-base text-[12px]">
             Your choices have always been Great, Make it more Glitter.
