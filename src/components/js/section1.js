@@ -34,7 +34,7 @@ function Section1() {
     setCurrentSlide(currentSlide === Slides.length - 1 ? 0 : currentSlide + 1);
   };
   return (
-    <div class="bg-gradient-to-r from-red-300 to-slate-700 p-4 h-full mt-5 pb-[2.5rem] flex justify-center">
+    <div class="bg-gradient-to-r from-red-300 to-slate-700 p-4 h-full pb-[2.5rem] flex justify-center">
       <div class="">
       
         {/* <img src={img1}/> */}
