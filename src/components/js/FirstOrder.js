@@ -15,11 +15,9 @@ function FirstOrder() {
                             <p class="text-center font-medium text-slate-400 mt-3 sm:text-lg text-[13px]">By subscribing to newsletter</p>
                             <div class="flex justify-center mt-4">
                                 <input type="email" placeholder='Your Email' class="bg-slate-100 outline-slate-200 sm:p-2 p-1 md:w-[19rem] sm:w-[10rem] w-[5rem] rounded-l-lg placeholder:text-[12px] sm:placeholder:text-base"/>
-                                <button class="bg-red-500 md:w-[6rem] sm:w-[4rem] w-[3rem] text-white rounded-r-lg sm:text-[12px] text-[10px] font-medium">SUBMIT</button>
-                                
+                                <button class="bg-red-500 md:w-[6rem] sm:w-[4rem] w-[3rem] text-white rounded-r-lg sm:text-[12px] text-[10px] font-medium">SUBMIT</button>      
                             </div>
-                        </div>
-                        
+                        </div>   
                     </div>
                 </div>
             </div>

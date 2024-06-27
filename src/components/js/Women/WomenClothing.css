@@ -1,0 +1,109 @@
+.clothing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 8%;
+  }
+    
+  .clothing-item {
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+  }
+  
+  .clothing-item:hover {
+    width: 20rem;
+    border: 1px solid #f4f3f3;
+    transition: 0.2s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.269);
+  }
+  
+  h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25rem;
+  }
+  
+  .clothing-item h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .clothing-item p {
+    margin: 0.5rem 0;
+  }
+  
+  .clothing-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  @media (max-width: 1008px) { /* Adjust this breakpoint as needed */
+    .clothing-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 700px) { /* Adjust this breakpoint as needed */
+    .clothing-item h2 {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+      .clothing-item p {
+        font-size: small;
+      }
+      .clothing-item img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+      .clothing-item {
+        padding: 1.5rem;
+        width: 13rem;
+      }
+      .clothing-item:hover {
+        width: 13rem;
+        border: 1px solid #f4f3f3;
+        transition: 0.2s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.269);
+      }
+  }
+  @media (max-width: 400px) { /* Adjust this breakpoint as needed */
+    .clothing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 8%;
+        /* width: 10rem; */
+      }
+        
+      .clothing-item {
+        border-radius: 18px;
+        padding: 1rem;
+        /* background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        width: 9rem;
+      
+      }
+    
+    .clothing-item h2 {
+        font-size: 0.5rem;
+      }
+      .clothing-item p {
+        font-size: 8px;
+      }
+      .clothing-item:hover {
+        width: 9rem;
+        border: 1px solid #f4f3f3;
+        transition: 0.2s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.269);
+      }
+  }

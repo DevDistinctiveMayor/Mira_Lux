@@ -6,7 +6,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div>
-      <div class="mt-[3rem]">
+      <div class="mt-[4rem] pt-[0.3rem]">
         <div class="Footer">
           <div class="">
             <div class="flex gap-2 justify-center">
@@ -37,8 +37,6 @@ function Footer() {
               <div class="flex justify-center mt-[2rem]  text-slate-400 font-bold">
                 <p>&copy;Copyright 2024</p>
               </div>
-
-             
           </div>
         </div>
       </div>

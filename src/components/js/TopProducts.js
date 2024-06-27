@@ -42,7 +42,7 @@ function TopProducts() {
       <div class="bg-slate-100 h-full">
         <div class="flex justify-center">
         <div class="sm:flex p-9 gap-5 justify-center">
-          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 sm:w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer">
+          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 sm:w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer">
             <div class="flex justify-center ">
               <div class="mt-5">
                 <p class="font-semibold">New</p>
@@ -65,7 +65,7 @@ function TopProducts() {
             </div>
           </div>
 
-          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer sm:mt-0 mt-5">
+          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer sm:mt-0 mt-5">
             <div class=" flex justify-center gap-2">
               <div class="mt-5">
                 <p class="font-semibold">New</p>
@@ -88,7 +88,7 @@ function TopProducts() {
             </div>
           </div>
 
-          <div class="bg-white p-5 h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer hidden lg:block">
+          <div class="bg-white p-5 h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer hidden lg:block">
             <div class="flex justify-center ">
               <div class="mt-5">
                 <p class="font-semibold">New</p>
@@ -115,7 +115,7 @@ function TopProducts() {
 
         <div class="flex justify-center">
         <div class="sm:flex  p-9 gap-5 justify-center">
-          <div class="bg-white p-5 h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer lg:block hidden">
+          <div class="bg-white p-5 h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer lg:block hidden">
             <div class=" flex justify-center gap-3">
               <div class="mt-5">
                 <p class="font-semibold">New</p>
@@ -139,7 +139,7 @@ function TopProducts() {
           </div>
 
      
-          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3 hover:bg-slate-400 cursor-pointer">
+          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3 hover:bg-slate-100 cursor-pointer">
             <div class="flex justify-center gap-2">
               <div class="mt-5">
                 <p class="font-semibold">New</p>
@@ -162,7 +162,7 @@ function TopProducts() {
             </div>
           </div>
 
-          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer sm:mt-0 mt-5">
+          <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer sm:mt-0 mt-5">
             <div class=" flex justify-center ">
               <div class="mt-5">
                 <p class="font-semibold">New</p>
@@ -190,7 +190,7 @@ function TopProducts() {
 
       <div class="flex justify-center">
       <div class="sm:flex  p-9 gap-5 justify-center lg:hidden">
-        <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer">
+        <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer">
           <div class=" flex justify-center gap-3">
             <div class="mt-5">
               <p class="font-semibold">New</p>
@@ -213,7 +213,7 @@ function TopProducts() {
           </div>
         </div>
 
-        <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-400 cursor-pointer sm:mt-0 mt-5">
+        <div class="bg-white p-5 sm:h-full rounded-lg shadow-xl shadow-slate-400 w-[17rem] gap-3  hover:bg-slate-100 cursor-pointer sm:mt-0 mt-5">
           <div class=" flex justify-center ">
             <div class="mt-5">
               <p class="font-semibold">New</p>

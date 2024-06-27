@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import { FaShopify, FaUser, FaSearch } from "react-icons/fa";
 import img3 from "./img/mira.jpg";
 import './Header.css';
+import { useNavigate } from "react-router-dom";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    setIsOpen(false); // Close the menu
   };
 
   return (
@@ -19,23 +27,19 @@ const HamburgerMenu = () => {
             <h5 className="font-medium font-serif sm:text-basetext-[11px] text-red-500">MIRA_LUX</h5>
           </div>
 
-  
-
           <div className={`menu ${isOpen ? 'open' : ''} mt-[0.5rem]`}>
             <ul className="flex gap-[1rem] font-font_D flex-col lg:flex-row">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Contact</a></li>
+              <li className="cursor-pointer" onClick={() => handleNavigation("/aboutus")}>About Us</li>
+              <li className="cursor-pointer" onClick={() => handleNavigation("/women")}>Women</li>
+              <li className="cursor-pointer" onClick={() => handleNavigation("/men")}>Men</li>
+              <li className="cursor-pointer" onClick={() => handleNavigation("/accessories")}>Accessories</li>
+              <li className="cursor-pointer" onClick={() => handleNavigation("/shop")}>Shop</li>
+              <li className="cursor-pointer" onClick={() => handleNavigation("/contact")}>Contact</li>
             </ul>
           </div>
 
-          
-
           <div className="flex gap-3 items-center">
-            <FaUser className="h-10 text-slate-700" />
+            <FaUser className="h-10 text-slate-700 cursor-pointer" onClick={() => handleNavigation("/")} />
             <FaSearch className="h-10 text-slate-700"/>
             <FaShopify className="h-10 text-slate-700"/>
           </div>
