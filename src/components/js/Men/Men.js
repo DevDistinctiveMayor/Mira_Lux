@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./WomenClothing.css";
+// import "./MenClothing.css";
 import { IoStarSharp } from "react-icons/io5";
 import Like from "../Like";
 
-const WomenClothing = () => {
+const MenClothing = () => {
   const [clothingData, setClothingData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,7 +13,7 @@ const WomenClothing = () => {
     const fetchClothingData = async () => {
       try {
         const response = await axios.get(
-          "https://mira-boutique-backend-1.onrender.com/api/women-clothing"
+          "http://localhost:5000/api/men-clothing"
         );
         setClothingData(response.data);
       } catch (err) {
@@ -37,13 +37,13 @@ const WomenClothing = () => {
   return (
     <div className="flex justify-center bg-slate-100 -mb-[6rem]">
       <div className="mt-[6rem]">
-        <h1 className="flex justify-center font-bold">Women's Clothing</h1>
+        <h1 className="flex justify-center font-bold">Men's Clothing</h1>
         <div className="clothing-grid mt-[2rem]">
           {clothingData.map((item) => (
             <div key={item.id} className="clothing-item">
               {item.image && (
                 <img
-                  src={`https://mira-boutique-backend-1.onrender.com${item.image}`}
+                  src={`http://localhost:5000${item.image}`}
                   alt={item.title}
                   width="100"
                   className="w-max"
@@ -70,4 +70,4 @@ const WomenClothing = () => {
   );
 };
 
-export default WomenClothing;
+export default MenClothing;
