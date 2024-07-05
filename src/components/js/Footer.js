@@ -25,16 +25,19 @@ function Footer() {
               </div>
 
               <div class="flex justify-center gap-5 mt-5">
-                <FaFacebook fontSize={25} class="text-slate-400"/>
-                <FaWhatsapp  fontSize={25} class="text-slate-400"/>
-                <FaInstagram  fontSize={25} class="text-slate-400"/>
+                <a href="https://www.instagram.com/mira_luxstore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram fontSize={25} class="text-slate-400"/></a>
+                <a href="https://wa.me/message/55V7IO44DQNVL1"><FaWhatsapp  fontSize={25} class="text-slate-400"/></a>
               </div>
 
-              <div class="flex justify-center mt-[3rem]">
-                <div class="border-[0.5px] border-slate-500 lg:w-[50rem] w-[30rem]"></div>
+                <div class="flex justify-center gap-5 mt-5  text-slate-400 font-bold">Address</div>
+              <div class="flex justify-center">
+                <div class="underline text-blue-300 text-[15px]">Shop 03 Obayemi Mall Opposite Old Nao Ado Ekiti, Nigeria.</div>
               </div>
 
-              <div class="flex justify-center mt-[2rem]  text-slate-400 font-bold">
+              <div class="flex justify-center gap-5 mt-5  text-slate-400 font-bold">PhoneNo</div>
+              <a href="tel:07044721537"  class="flex justify-center gap-5  text-slate-50 font-bold">+234 704 472 1537</a>
+
+              <div class="flex justify-center mt-[1rem]  text-slate-400 font-bold">
                 <p>&copy;Copyright 2024</p>
               </div>
           </div>

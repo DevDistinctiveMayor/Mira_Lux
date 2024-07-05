@@ -5,8 +5,22 @@ import { GiWatch } from "react-icons/gi";
 import { PiHighHeelDuotone } from "react-icons/pi";
 import { GiNecklaceDisplay } from "react-icons/gi";
 import { FaBath } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-function HotCategories() {
+
+
+
+
+const HotCategories = () => {
+
+  const navigate = useNavigate();
+
+
+  const handleNavigation = (path) => {
+    navigate(path); 
+    
+  };
+
   return (
     <div>
       <div className="flex justify-center">
@@ -19,8 +33,8 @@ function HotCategories() {
       </div>
       <div class="flex justify-center lg:mt-3 mt-4">
         <div class="flex gap-[2rem] font-medium text-slate-500">
-          <p class="underline hover:text-red-400 cursor-pointer sm:text-base text-[11px]">Man</p>
-          <p class="underline hover:text-red-400 cursor-pointer sm:text-base text-[11px]">Woman</p>
+          <p class="underline hover:text-red-400 cursor-pointer sm:text-base text-[11px]"  onClick={() => handleNavigation("/men")}>Man</p>
+          <p class="underline hover:text-red-400 cursor-pointer sm:text-base text-[11px]"  onClick={() => handleNavigation("/women")}>Woman</p>
         </div>
       </div>
 
