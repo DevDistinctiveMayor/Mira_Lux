@@ -13,7 +13,7 @@ const MenClothing = () => {
     const fetchClothingData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/men-clothing"
+          "https://men-clothes-data.onrender.com/api/men-clothing"
         );
         setClothingData(response.data);
       } catch (err) {
@@ -43,7 +43,7 @@ const MenClothing = () => {
             <div key={item.id} className="clothing-item">
               {item.image && (
                 <img
-                  src={`http://localhost:5000${item.image}`}
+                  src={`https://men-clothes-data.onrender.com${item.image}`}
                   alt={item.title}
                   width="100"
                   className="w-max"

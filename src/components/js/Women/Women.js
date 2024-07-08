@@ -13,8 +13,9 @@ const WomenClothing = () => {
     const fetchClothingData = async () => {
       try {
         const response = await axios.get(
-          "https://mira-boutique-backend-1.onrender.com/api/women-clothing"
+          "https://women-clothes-data.onrender.com/api/women-clothing"
         );
+        console.log(response.data); // Log the response to check its structure
         setClothingData(response.data);
       } catch (err) {
         setError(err);
@@ -34,6 +35,11 @@ const WomenClothing = () => {
     return <div>Error: {error.message}</div>;
   }
 
+  // Check if clothingData is an array before mapping
+  if (!Array.isArray(clothingData)) {
+    return <div>Unexpected data format</div>;
+  }
+
   return (
     <div className="flex justify-center bg-slate-100 -mb-[6rem]">
       <div className="mt-[6rem]">
@@ -43,7 +49,7 @@ const WomenClothing = () => {
             <div key={item.id} className="clothing-item">
               {item.image && (
                 <img
-                  src={`https://mira-boutique-backend-1.onrender.com${item.image}`}
+                  src={`https://women-clothes-data.onrender.com${item.image}`}
                   alt={item.title}
                   width="100"
                   className="w-max"
