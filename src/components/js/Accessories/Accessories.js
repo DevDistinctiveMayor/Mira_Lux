@@ -3,6 +3,7 @@ import axios from "axios";
 // import "./Accessories.css";
 import { IoStarSharp } from "react-icons/io5";
 import Like from "../Like";
+import Spinner from "../Loading/Loading"; 
 
 const Accessories = () => {
   const [clothingData, setClothingData] = useState([]);
@@ -27,17 +28,18 @@ const Accessories = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Spinner />; // Display the spinner while loading
   }
 
   if (error) {
     return <div>Error: {error.message}</div>;
   }
 
+
   return (
     <div className="flex justify-center bg-slate-100 -mb-[6rem]">
       <div className="mt-[6rem]">
-        <h1 className="flex justify-center font-bold">Men's Clothing</h1>
+        <h1 className="flex justify-center font-bold">Accessories</h1>
         <div className="clothing-grid mt-[2rem]">
           {clothingData.map((item) => (
             <div key={item.id} className="clothing-item">

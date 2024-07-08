@@ -3,6 +3,7 @@ import axios from "axios";
 // import "./MenClothing.css";
 import { IoStarSharp } from "react-icons/io5";
 import Like from "../Like";
+import Spinner from "../Loading/Loading"; 
 
 const MenClothing = () => {
   const [clothingData, setClothingData] = useState([]);
@@ -27,12 +28,13 @@ const MenClothing = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Spinner />; // Display the spinner while loading
   }
 
   if (error) {
     return <div>Error: {error.message}</div>;
   }
+
 
   return (
     <div className="flex justify-center bg-slate-100 -mb-[6rem]">
