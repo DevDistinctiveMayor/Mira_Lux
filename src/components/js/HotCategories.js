@@ -5,6 +5,7 @@ import { GiWatch } from "react-icons/gi";
 import { PiHighHeelDuotone } from "react-icons/pi";
 import { GiNecklaceDisplay } from "react-icons/gi";
 import { FaBath } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 
@@ -20,6 +21,8 @@ const HotCategories = () => {
     navigate(path); 
     
   };
+
+
 
   return (
     <div>
@@ -39,39 +42,39 @@ const HotCategories = () => {
       </div>
 
       <div>
-        <div class="flex lg:gap-[5rem] md:gap-[1rem] sm:gap-[2rem] gap-[0.5rem] justify-center mt-5">
+        <div class="flex lg:gap-[3rem] md:gap-[1rem] sm:gap-[2rem] gap-[0.5rem] justify-center mt-5">
           <div>
             <div class=" bg-slate-100 md:p-5 sm:p-4 p-3 rounded-full cursor-pointer">
               <RiTShirtAirLine className="text-red-400 sm:text-[40px] md:text-[45px] text-[20px]"  />
             </div>
-            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500">CLOTHING</p>
+            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500">Clothing</p>
           </div>
 
           <div>
             <div class=" bg-slate-100 md:p-5 sm:p-4 p-3 rounded-full cursor-pointer">
               <BsFillHandbagFill className="text-red-400 sm:text-[40px] md:text-[45px] text-[20px]" />
             </div>
-            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 ml-2">BAGS</p>
+            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 md:ml-6">Bags</p>
           </div>
 
           <div>
             <div class=" bg-slate-100 md:p-5 sm:p-4 p-3 rounded-full cursor-pointer">
               <GiWatch className="text-red-400 sm:text-[40px] md:text-[45px] text-[20px]" />
             </div>
-            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 ">WATCHS</p>
+            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 ">Watches</p>
           </div>
 
           <div>
             <div class=" bg-slate-100 md:p-5 sm:p-4 p-3 rounded-full cursor-pointer">
               <PiHighHeelDuotone className="text-red-400 sm:text-[40px] md:text-[45px] text-[20px]" />
             </div>
-            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500">SHOES</p>
+            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 md:ml-4">Shoes</p>
           </div>
           <div>
             <div class=" bg-slate-100 md:p-5 sm:p-4 p-3 rounded-full cursor-pointer flex justify-center">
               <GiNecklaceDisplay className="text-red-400 sm:text-[40px] md:text-[45px] text-[20px]" />
             </div>
-            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 md:-ml-3 ">ACCESSORIES</p>
+            <p class="mt-3 sm:text-base text-[8.5px] font-medium text-slate-500 md:-ml-3 lg:ml-0">Accessories</p>
           </div>
           <div>
             <div class=" bg-slate-100 md:p-5 sm:p-4 p-3 rounded-full cursor-pointer ">
@@ -79,6 +82,16 @@ const HotCategories = () => {
             </div>
             <p class="mt-3  sm:text-base text-[8.5px] font-medium text-slate-500 md:ml-2 ">Skin Care</p>
           </div>
+        </div>
+      </div>
+      <div class="mt-6">
+        <div class="flex justify-center text-center">
+          <p class="text-slate-500 font-medium sm:text-base text-[11px]">Check New Arrival From Our Instagram and Make Your Choice</p>
+        </div>
+        <div class="flex justify-center text-center mt-4">
+        <div className="sm:text-[40px] md:text-[45px] text-[20px]">
+        <a href="https://www.instagram.com/mira_luxstore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaSquareInstagram class="text-red-600"/></a>
+      </div>
         </div>
       </div>
     </div>
