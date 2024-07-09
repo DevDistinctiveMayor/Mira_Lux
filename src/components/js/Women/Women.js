@@ -45,6 +45,7 @@ const WomenClothing = () => {
       <div className="mt-[6rem]">
         <h1 className="flex justify-center font-bold">Women's Clothing</h1>
         <div className="clothing-grid mt-[2rem]">
+        {/* <Spinner /> */}
           {clothingData.map((item) => (
             <div key={item.id} className="clothing-item">
               {item.image && (
