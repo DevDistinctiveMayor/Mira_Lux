@@ -13,7 +13,7 @@
   background-color: #444444;
   position: absolute;
   left: 0;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   z-index: 30;
 }
 
@@ -52,7 +52,7 @@
   background: rgb(255, 255, 255);
 margin-top: 1%;
   z-index: 30;
-  transition: top 1s ease-in-out;
+  transition: top 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
