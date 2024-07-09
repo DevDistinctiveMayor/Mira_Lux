@@ -42,6 +42,7 @@ function Like() {
                 onClick={handleLikeUnlike}
                 className={`likeBtn ${liked ? "liked" : ""}`}
                 disabled={isFetching}
+               
             >
                 {isFetching ? <SpinnerIcon /> : <HeartIcon liked={liked} />}
                 {liked ? "" : ""}
