@@ -4,6 +4,8 @@ import "./WomenClothing.css";
 import { IoStarSharp } from "react-icons/io5";
 import Like from "../Like";
 import Spinner from "../Loading/Loading"; 
+
+
 const WomenClothing = () => {
   const [clothingData, setClothingData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -42,7 +44,7 @@ const WomenClothing = () => {
 
   return (
     <div className="flex justify-center bg-slate-100 -mb-[6rem]">
-      <div className="mt-[6rem]">
+      <div className="mt-[2rem]">
         <h1 className="flex justify-center font-bold">Women's Clothing</h1>
         <div className="clothing-grid mt-[2rem]">
         {/* <Spinner /> */}
