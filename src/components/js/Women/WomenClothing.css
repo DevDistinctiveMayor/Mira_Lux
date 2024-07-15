@@ -13,7 +13,7 @@
     padding: 1.5rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 20rem;
+    width: 18rem;
   }
   
   .clothing-item:hover {
@@ -65,10 +65,10 @@
       }
       .clothing-item {
         padding: 1.5rem;
-        width: 13rem;
+        width: 10rem;
       }
       .clothing-item:hover {
-        width: 13rem;
+        width: 10rem;
         border: 1px solid #f4f3f3;
         transition: 0.2s;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.269);
