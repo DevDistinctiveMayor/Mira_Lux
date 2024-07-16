@@ -16,6 +16,7 @@ const Accessories = () => {
         const response = await axios.get(
           "https://accessories-data.onrender.com/api/accessories"
         );
+        console.log(response.data); // Log the response to check its structure
         setClothingData(response.data);
       } catch (err) {
         setError(err);
@@ -27,49 +28,49 @@ const Accessories = () => {
     fetchClothingData();
   }, []);
 
-  if (loading) {
-    return <Spinner />; // Display the spinner while loading
-  }
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-
-
   return (
-    <div className="flex justify-center bg-slate-100 -mb-[6rem]">
-      <div className="mt-[2rem]">
+    <div className="flex justify-center bg-slate-100">
+      <div className="mt-[5rem]">
         <h1 className="flex justify-center font-bold">Accessories</h1>
-        <div className="clothing-grid mt-[2rem]">
-          {clothingData.map((item) => (
-            <div key={item.id} className="clothing-item">
-              {item.image && (
-                <img
-                  src={`https://accessories-data.onrender.com${item.image}`}
-                  alt={item.title}
-                  width="100"
-                  className="w-max"
-                />
-              )}
-              <div className="mt-[30px]">
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
-                <p className="font-medium">Quantity: {item.Quantity}</p>
-                <div className="flex justify-between">
-                  <p className="text-blue-600 font-medium">₦{item.price}</p>
-                  <Like className="mt-3" />
-                </div>
-                <div className="flex gap-1 mt-1">
-                  <IoStarSharp className="mt-1 text-yellow-400" fontSize={18} />
-                  <span className="text-slate-500 font-medium">{item.rating}</span>
+        {loading ? (
+          <Spinner /> // Display the spinner while loading
+        ) : error ? (
+          <div>Error: {error.message}</div>
+        ) : !Array.isArray(clothingData) ? (
+          <div>Unexpected data format</div>
+        ) : (
+          <div className="clothing-grid mt-[1rem]">
+            {clothingData.map((item) => (
+              <div key={item.id} className="clothing-item">
+                {item.image && (
+                  <img
+                    src={`https://accessories-data.onrender.com${item.image}`}
+                    alt={item.title}
+                    width="100"
+                    className="w-max"
+                  />
+                )}
+                <div className="mt-[30px]">
+                  <h2>{item.title}</h2>
+                  <p>{item.description}</p>
+                  <p className="font-medium">Quantity: {item.Quantity}</p>
+                  <div className="flex justify-between">
+                    <p className="text-blue-600 font-medium">₦{item.price}</p>
+                    <Like className="mt-3" />
+                  </div>
+                  <div className="flex gap-1 mt-1">
+                    <IoStarSharp className="mt-1 text-yellow-400" fontSize={18} />
+                    <span className="text-slate-500 font-medium">{item.rating}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default Accessories;
+
