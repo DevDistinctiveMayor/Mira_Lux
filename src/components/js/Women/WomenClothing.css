@@ -90,7 +90,7 @@
         padding: 1rem;
         /* background-color: #fff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-        width: 9rem;
+        width: 6rem;
       
       }
     
@@ -102,6 +102,28 @@
       }
       .clothing-item:hover {
         width: 9rem;
+        border: 1px solid #f4f3f3;
+        transition: 0.2s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.269);
+      }
+  }
+
+  @media (max-width: 200px) { /* Adjust this breakpoint as needed */
+        
+      .clothing-item {
+        border-radius: 18px;
+        padding: 1rem;
+        width: 7rem;     
+      }
+    
+    .clothing-item h2 {
+        font-size: 0.5rem;
+      }
+      .clothing-item p {
+        font-size: 8px;
+      }
+      .clothing-item:hover {
+        width: 7rem;
         border: 1px solid #f4f3f3;
         transition: 0.2s;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.269);
