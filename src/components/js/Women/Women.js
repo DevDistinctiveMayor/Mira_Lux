@@ -43,8 +43,8 @@ const WomenClothing = () => {
   }
 
   return (
-    <div className="flex justify-center bg-slate-100 -mb-[6rem]">
-      <div className="mt-[2rem]">
+    <div className="flex justify-center bg-slate-100">
+      <div className="mt-[6rem]">
         <h1 className="flex justify-center font-bold">Women's Clothing</h1>
         <div className="clothing-grid mt-[2rem]">
         {/* <Spinner /> */}
